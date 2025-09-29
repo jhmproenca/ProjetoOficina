@@ -1,0 +1,108 @@
+﻿/* #ordemServiço{
+    display: block;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #62b5f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: aqua;
+    text-align: center;
+    padding: 20px;
+}
+
+#menu button{
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+}
+
+#menu button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+main {
+    background-color: white;
+    width: 97vw;
+    height: 90vh;
+    margin: auto;
+}
+
+table{
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border-collapse: collapse;
+}
+
+table > caption{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+th{
+    text-align: left;
+}
+
+td{
+    border:2px solid black;
+}
+
+td input{
+    border: none;
+}
+
+#areabotao{
+    display: flex;
+    align-items: center;
+}
+#btnCadastrar{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    width: 100px;
+}
+
+#btnLimpar{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+    color: red;
+    border-radius: 10px;
+    width: 100px;
+    
+}
+
+#btnCadastrar:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+#btnLimpar:hover{
+    background-color: rgb(243, 64, 64);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}

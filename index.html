@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Oficina Central</h1>
+        <nav id="menu">
+            <button id="ordemServico">Ordem de Serviço</button>
+            <button id="cMaterial">Controle de Material</button>
+            <button id="lMaterial">Lista de Materiais</button>
+            <button id="laudoTec">Laudo Técnico</button>
+            <button id="ajuda">Ajuda</button>
+        </nav>
+    </header>
+    <main>
+        <div id="conteudoOrdemServico">Conteúdo da Ordem de Serviço</div>
+        <div id="conteudoCMaterial">
+            <div>
+                <table>
+                    <caption>Cadastro de material</caption>
+                    <tr>
+                        <th >Nome:</th>
+                        <td><input type="text" name="nome" id="nomeMat" placeholder="Ex.: Motor Weg" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <th >Código:</th>
+                        <td><input type="text" name="codigo" id="codMat" placeholder="Ex.: 123456" maxlength="10" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <th >Descrição:</th>
+                        <td><input type="text" name="descricao" id="desMat" placeholder="Ex.: 2CV / 1750RPM " autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <th >Imagem:</th>
+                        <td><input type="file" name="Foto" id="imgMat"></td>
+                    </tr>
+                </table>
+                <div id="areabotao">
+                    <input type="submit" value="Cadastrar" id="btnCadastrar">
+                    <input type="reset" value="Limpar" id="btnLimpar">
+                </div>
+            </div>
+           
+            
+        </div>
+        <div id="conteudoLMaterial">
+             <div>
+                <table>
+                    <caption>Materiais cadastrados</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Imagem</th>
+                        </tr>
+                    </thead>
+                    <tbody  id="resMat">
+                        <!-- <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        <div id="conteudoLaudoTec">Conteúdo do Laudo Técnico</div>
+        <div id="conteudoAjuda">Conteúdo de Ajuda</div>
+    </main>
+    <script src="javascript.js"></script>
+</body>
+</html>
