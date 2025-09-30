@@ -1,3 +1,39 @@
+ 
+ // Esconder menu
+ 
+const menu = document.getElementById('menu')
+function menuBurger() {
+  if(window.innerWidth >= 820){
+    menu.style.display = 'block'
+  } else {
+    menu.style.display = 'none'
+  }
+}
+
+menuBurger()
+window.addEventListener('resize', menuBurger)
+
+const burger = document.getElementById('burger')
+
+burger.addEventListener('click', function(){
+  if(menu.style.display == 'none'){
+    menu.style.display = 'block'
+  } else {
+    menu.style.display = 'none'
+  }
+})
+
+// Fechar menu ao clicar em um item
+const links = menu.querySelectorAll('button')
+links.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 820) {
+      menu.style.display = 'none'
+    }
+  })
+})
+
+
  // Pega todos os botões e seções
 const botoes = {
   ordemServico: document.getElementById('ordemServico'),
@@ -62,7 +98,7 @@ btnCadastrar.addEventListener('click', function(){
     <td>${cadMat.descricao}</td>
     <td>IMG</td>
     `
-
+  alert('Material cadastrado com sucesso!')
   resMat.appendChild(addlinha)
 
   document.getElementById('nomeMat').value = ''
