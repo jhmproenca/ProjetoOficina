@@ -25,7 +25,68 @@ menu
         </nav>
     </header>
     <main>
-        <div id="conteudoOrdemServico">Conteúdo da Ordem de Serviço</div>
+        <div id="conteudoOrdemServico">
+            <div>
+                <table>
+                    <caption>Cadastro de Ordem de Serviço</caption>
+                    
+                    <tr>
+                        <th >Código:</th>
+                        <td><input type="text" name="codigoOS" id="" placeholder="Ex.: 123456" maxlength="10" autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                        <th >Descrição:</th>
+                        <td><input type="text" name="descricaoOS" id="" placeholder="Ex.: 2CV / 1750RPM " autocomplete="off"></td>
+                    </tr>
+                    <tr>
+                         <th >Status</th>
+                        <td>
+                            <select name="Status" id="statusOS">
+                                <option value="EmAndamento">Em andamento</option>
+                            </select>
+                        </td> 
+                    </tr>
+                </table>
+                <div id="areabotao">
+                    <input type="submit" value="Cadastrar" id="btnCadastrarOS">
+                    <input type="reset" value="Limpar" id="btnLimparOS">
+                </div>
+            </div>
+            <div>
+                <table>
+                    <caption>Ordens de Serviço</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Código</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody  id="resOS">
+                        <!-- <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>a</td>
+                            <td>b</td>
+                            <td>c</td>
+                            <td>d</td>
+                        </tr> -->
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+        </div>
         <div id="conteudoCMaterial">
             <div>
                 <table>
