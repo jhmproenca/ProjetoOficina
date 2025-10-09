@@ -2,10 +2,10 @@
 
 let codigo = [] //Lista para verificar se código já existe
 let resMat = document.getElementById('resMat')
-let btnCadastrar = document.getElementById('btnCadastrar')
+let btnCadastrarMat = document.getElementById('btnCadastrarMat')
 
 //Cadastro de material
-btnCadastrar.addEventListener('click', function(){
+btnCadastrarMat.addEventListener('click', function(){
   let cadMat = {
   nome: document.getElementById('nomeMat').value,
   codigo: Number(document.getElementById('codMat').value),
@@ -17,25 +17,25 @@ btnCadastrar.addEventListener('click', function(){
   let pesq = codigo.indexOf(cadMat.codigo)
 
   if(pesq == -1){
-     codigo.push(cadMat.codigo)
+    codigo.push(cadMat.codigo)
 
-  const addlinha = document.createElement('tr')
+    const addlinha = document.createElement('tr')
 
-  addlinha.innerHTML = `
+    addlinha.innerHTML = `
     <td>${cadMat.codigo}</td>
     <td>${cadMat.nome}</td>
     <td>${cadMat.descricao}</td>
     <td>IMG</td>
     `
-  alert('Material cadastrado com sucesso!')
-  resMat.appendChild(addlinha)
+    alert('Material cadastrado com sucesso!')
+    resMat.appendChild(addlinha)
 
-  document.getElementById('nomeMat').value = ''
-  document.getElementById('codMat').value = ''
-  document.getElementById('desMat').value = ''
-  document.getElementById('imgMat').value = ''
+    document.getElementById('nomeMat').value = ''
+    document.getElementById('codMat').value = ''
+    document.getElementById('desMat').value = ''
+    document.getElementById('imgMat').value = ''
   }else{
-   alert('O código digitado já existe!')
+    alert('O código digitado já existe!')
     document.getElementById('codMat').value = ''
 
   }

@@ -1,7 +1,7 @@
-let btnCadastrar = document.getElementById('btnCadastrarOS')
+let btnCadastrarOS = document.getElementById('btnCadastrarOS')
 let resOS = document.getElementById('resOS')
 
-btnCadastrar.addEventListener('click', function() {
+btnCadastrarOS.addEventListener('click', function() {
     // Pega os valores dos campos
     let codigo = document.getElementById('codigoOS').value.trim()
     let descricao = document.getElementById('descricaoOS').value.trim()
