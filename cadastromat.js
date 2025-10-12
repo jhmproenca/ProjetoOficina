@@ -16,7 +16,7 @@ btnCadastrarMat.addEventListener('click', function(){
   //Verifica se o código já existe
   let pesq = codigo.indexOf(cadMat.codigo)
 
-  if(pesq == -1){
+  if(pesq == -1){ //se o código não existir, cadastra
     codigo.push(cadMat.codigo)
 
     const addlinha = document.createElement('tr')
@@ -34,7 +34,7 @@ btnCadastrarMat.addEventListener('click', function(){
     document.getElementById('codMat').value = ''
     document.getElementById('desMat').value = ''
     document.getElementById('imgMat').value = ''
-  }else{
+  }else{ //se o código existir, alerta
     alert('O código digitado já existe!')
     document.getElementById('codMat').value = ''
 
